@@ -11,7 +11,7 @@ while True :
     print('[ 1 ] ACHAR HIPOTENUSA \n[ 2 ] ACHAR CATETO OPOSTO \n[ 3 ] ACHAR CATETO ADJACENTE\n[ 4 ] ACHAR O TIPO DE CONTA ')
     opcao = str(input('Digite aqui sua escolha :  ')).strip()
     while opcao not in '1234':
-        opcao = int(input('Digite aqui sua escolha :  '))
+        opcao = str(input('Digite aqui sua escolha :  '))
     if opcao == '4':
         print(f'''
                            /|
