@@ -4,16 +4,19 @@ def cript(palavra):
     b = 0
     for letra in palavra:
         if letra != a :
-            lista.append([a , b])
-            a = letra
-            b = 1
+                lista.append([a , b])
+                a = letra
+                b = 1
         else:
             b += 1
     lista.append([a , b])
     c = ''
     for nome , qt in lista[1:]:
-        c += nome
-        c += str(qt)
+        if nome == ' ':
+            c += ' '
+        else:
+            c += nome
+            c += str(qt)
     if len(c) < len(palavra):
         return c
     else:
