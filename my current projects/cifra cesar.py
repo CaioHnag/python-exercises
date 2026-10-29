@@ -4,7 +4,7 @@ num = '0123456789'
 for letra in frase :
     if letra in alfabeto :
         a = alfabeto.find(letra)
-        aa = a+4
+        aa = (a+4)%26
         frase = frase.replace(letra , alfabeto[aa])
     elif letra in num :
         b = num.find(letra)
